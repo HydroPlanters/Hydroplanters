@@ -132,7 +132,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link  active">
+            <a href="sales.php" class="nav-link ">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Sales
@@ -141,7 +141,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="expenses.php" class="nav-link">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-coins"></i>
               <p>
                 Expenses
@@ -170,17 +170,19 @@
 
     <!-- Page Content -->
     <div class="row">
-        <div class="col-sm-10">
-            <div class="card card-primary">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+            <div class="card card-danger">
               <div class="card-header">
-                <h3 class="card-title">Input Transactions</h3>
+                <h3 class="card-title">Input Expenses</h3>
               </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-6">
                     <!-- Date -->
                     <div class="form-group">
-                      <label>Date:</label>
+                      <label>Expense Date:</label>
                         <div class="input-group date" id="reservationdate" data-target-input="nearest">
                             <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
                             <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
@@ -195,8 +197,8 @@
                 </div>
                 <!-- Name -->
                 <div class="form-group">
-                  <label for="customerName">Customer Name:</label>
-                  <input type="text" class="form-control" placeholder="Enter Name">
+                  <label for="customerName">Description:</label>
+                  <input type="text" class="form-control" placeholder="Description">
                 </div>
                 <!-- /.name -->
                 <div class="row">
@@ -232,7 +234,7 @@
                 <div class="row">
                   <div class="col-sm-6 mt-2">
                     <div class="form-group">
-                      <label>Amount Paid</label>
+                      <label>Expense Amount</label>
                       <div class="input-group mb-3">
                         <input type="text" class="form-control">
                         <div class="input-group-append">
@@ -240,7 +242,7 @@
                         </div>
                       </div>
                     </div>
-                    <button type="button" class="btn btn-block btn-success mt-5">Add</button>
+                    <button type="button" class="btn btn-block btn-success mt-5">Submit</button>
                     <button type="button" class="btn btn-block btn-outline-secondary">Clear</button>
                   </div>
                   <div class="col-sm-6 border border-dark">

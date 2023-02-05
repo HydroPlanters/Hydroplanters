@@ -38,7 +38,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <h1 class="m-0">Hi Nilo ! Welcome</h1>
+        <h1 class="m-0">Dashboard</h1>
       </li>
     </ul>
 
@@ -91,7 +91,7 @@
           <img src="../../images/userimg/nilo.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">My Profile <span>(Admin)</span></a>
+          <a href="#" class="d-block">My Profile<span>(Admin)</span></a>
         </div>
       </div>
 
@@ -141,7 +141,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="expenses.php" class="nav-link">
               <i class="nav-icon fas fa-coins"></i>
               <p>
                 Expenses
@@ -172,15 +172,30 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <!-- <h1 class="m-0">Dashboard</h1> -->
+            
+              <div class="input-group">
+                <button type="button" class="btn btn-default float-right" id="daterange-btn">
+                <i class="far fa-calendar-alt"></i> Date range picker
+                <i class="fas fa-caret-down"></i>
+                </button>
+              </div>
           </div><!-- /.col -->
           <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">
+                <?php
+                  $date = date('F d, Y (l) h:i:s');
+                  echo "As of " .  $date . "<br>";
+                ?>
+              </li>
+            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+    <hr>
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -239,12 +254,12 @@
               <div class="inner">
                 <h3>3</h3>
 
-                <p>Staff</p>
+                <p>Employee</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="manage_team.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>
